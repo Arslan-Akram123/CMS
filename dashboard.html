@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="MUL-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dashboardbody">
+    <main>
+        <section class="section position-relative">
+            <div class="togglebutton">
+                <span class="btn-menu-close"><i class="fa-solid fa-less-than"></i></span>
+            </div>
+            <div class="sidebar d-flex flex-column bg-white">
+
+                <div class="dashboard-upper d-flex py-2 flex-column ">
+                    <a href="index.html" class="text-decoration-none"><img src="mul_logo_v2.png" alt=""
+                            class="mb-2"></a>
+
+                </div>
+                <div class="dashboard-lower p-4">
+                    <ul class="list-unstyled">
+                        <li class="my-3 pb-2"><a href="dashboard.php" class="text-decoration-none"><img
+                                    src="Dashboard.png" alt="Dashboard"> <span class="ms-4 ">Dashboard</span></a></li>
+                        <li class="my-3 pb-2">
+                            <a href="Lecture-Schedule.php" class="text-decoration-none"><img src="schedule.png"
+                                    alt="Lecture Schedule"> <span class="ms-4 ">Lecture Schedule</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Fee Challans.php" class="text-decoration-none"><img src="fees.png"
+                                    alt="Fee Challans"> <span class="ms-4 ">Fee Challans</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Grade Book.php" class="text-decoration-none"><img src="grades.png"
+                                    alt="Grade Book"> <span class="ms-4 ">Grade Book</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Roll-Number-Slip.php" class="text-decoration-none"><img src="rollno.png"
+                                    alt="Roll Number Slip"> <span class="ms-4 ">Roll Number Slip</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Datesheet.php" class="text-decoration-none"><img src="datesheet.png"
+                                    alt="Datesheet"> <span class="ms-4 ">Datesheet</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Academic-Calender.php" class="text-decoration-none"><img src="Acedmic-calendar.png"
+                                    alt="Academic Calender"> <span class="ms-4 ">Academic Calender</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Student-Services.php" class="text-decoration-none"><img src="student-services.png"
+                                    alt="Student Services"> <span class="ms-4 ">Student Services</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Scheme-of-Study.php" class="text-decoration-none"><img src="sceme-study.png"
+                                    alt="Scheme of Study"> <span class="ms-4 ">Scheme of Study</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Todo-List.php" class="text-decoration-none"><img src="to-do.png" alt="Todo List">
+                                <span class="ms-4 ">Todo List</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Personal-Diary.php" class="text-decoration-none"><img src="personal-dairy.png"
+                                    alt="Personal Diary"> <span class="ms-4 ">Personal Diary</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Notice Board.php" class="text-decoration-none"><img src="notebook.png"
+                                    alt="Notice Board"> <span class="ms-4 ">Notice Board</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Guidance-&-Help.php" class="text-decoration-none"><img src="guidance.png"
+                                    alt="Guidance & Help"> <span class="ms-4 ">Guidance & Help</span></a>
+                        </li>
+                        <li class="my-3 pb-2">
+                            <a href="Profile.php" class="text-decoration-none"><img src="profile.png" alt="Profile">
+                                <span class="ms-4 ">Profile</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="container-fluid main-content">
+                <div class="row justify-content-center align-items-center flex-column">
+                    <div class="navbar col-12 px-4">
+                        <div class="left-navbar  d-flex align-items-center">
+                            <span id="toggler-button"><i class="fa-solid fa-bars  me-2 fs-5"></i></span>
+                            <a href=""
+                                class="text-decoration-none fs-5 mb-1 text-secondary d-none d-md-block">Dashboard</a>
+                        </div>
+                        <div class="right-navbar">
+                            <ul class="list-unstyled d-flex align-items-center gap-4 m-0">
+                                <li class="d-none d-md-block"><a href=""><i class="fa-regular fa-comments fs-4"></i></a>
+                                </li>
+                                <li class="d-none d-md-block"><a href=""><i class="fa-solid fa-book fs-4"></i></a></li>
+                                <li class="d-none d-md-block"><a href=""><i class="fa-regular fa-calendar fs-4"></i></a>
+                                </li>
+                                <li id="visible"><a href=""><i class="fa-regular fa-user fs-4"></i></a></li>
+                                <li class="profile-picture d-none d-md-block"><img src="myprofile.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="select-section col-12 col-md-8 d-flex justify-content-center flex-column gap-3 mt-5 mb-5">
+                        <label for="asession">Academic Session</label>
+                        <select name="season" id="season">
+                            <option value="Spring 2024">Spring 2024</option>
+                            <option value="Fall 2023">Fall 2023</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="content-section col-12">
+                    <h1 class="py-3 heading-main">Registered Courses (Spring 2024)</h1>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center gap-3 box-section">
+                            <div class="col-12 col-lg-8 d-flex flex-column gap-5">
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">BEHS302</span></div>
+                                        <img src="lal.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Life and learning -II</h4>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">COMP314</span></div>
+                                        <img src="ooad.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Object Oriented Analysis And Design</h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">COMP317</span></div>
+                                        <img src="tpl.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Theory of Programming Languages</h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">COMP413</span></div>
+                                        <img src="cc.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Compiler Construction</h4>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">ITEC311</span></div>
+                                        <img src="webt.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Web Technologies</h4>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12  d-flex flex-column flex-md-row blog">
+                                    <div class="col-12 col-md-5 col-lg-5 position-relative">
+                                        <div class="span bg-white rounded rounded-2"><span
+                                                class="blog-item-tag">MATH311</span></div>
+                                        <img src="mvc.png" alt="" class="img-fluid h-lg-100">
+                                    </div>
+                                    <div class="second-side-blog col-12 col-md-7 col-lg-7  p-3 p-md-4 ">
+                                        <div class="icon-show float-end mb-1">
+                                            <i class="fa-solid fa-book  me-1"></i>
+                                            <i class="fa-solid fa-bell "></i>
+                                        </div>
+                                        <h4 class="float-start">Multi-variate Calculus</h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col  me-2 p-0">
+                                <div class="event   px-2 px-sm-5 m-0 border-bottom border-secondary bg-white ">
+
+                                    <p id="new-event" class="ps-2 text-decoration-none text-dark m-0">New &
+                                        Events</p>
+                                    <p id="notice-board" class="ps-2 text-decoration-none text-dark m-0">Notice
+                                        Board</p>
+
+                                </div>
+                                <div class="newitems py-3 px-4 bg-white ">
+                                    <ul class="list-unstyled d-flex flex-column">
+                                        <li class="d-flex pt-3">
+                                            <img src="item1.jpg" alt="">
+                                            <span class="ps-3">Addmission Open Fall 2023</span>
+                                        </li>
+                                        <li class="d-flex pt-3">
+                                            <img src="item2.jpg" alt="">
+                                            <span class="ps-3">Faculty Training Workshop</span>
+                                        </li>
+                                        <li class="d-flex pt-3">
+                                            <img src="item3.jpg" alt="">
+                                            <span class="ps-3">Life-Saving Blood Camp Unites Students for a Noble
+                                                Cause</span>
+                                        </li>
+                                        <li class="d-flex pt-3">
+                                            <img src="item4.jpg" alt="">
+                                            <span class="ps-3">Empowering Pakistan's Energy Future</span>
+                                        </li>
+                                        <li class="d-flex pt-3">
+                                            <img src="item5.jpg" alt="">
+                                            <span class="ps-3">Seminar on Maritime Affairs Illuminates Ocean
+                                                Conservation and Pakistan
+                                                Potential</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="newevents py-3 px-4 bg-white">
+                                    <ul class="list-unstyled d-flex flex-column">
+                                        <li class="d-flex pt-3 align-items-center">
+                                            <i class="fa-solid fa-circle fs-6 "></i><span class="ps-2">Job Opportunity
+                                                at Al- Hareem Textile</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-center">
+                                            <i class="fa-solid fa-circle fs-6 "></i><span class="ps-2">Job Opportunity
+                                                at Gourmet Pakistan</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-center">
+                                            <i class="fa-solid fa-circle fs-6 "></i><span class="ps-2">Job Opportunity
+                                                at Tana Bana Fabrics</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-center">
+                                            <i class="fa-solid fa-circle fs-6 "></i><span class="ps-2">Job Opportunity
+                                                at Cougar</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-center">
+                                            <i class="fa-solid fa-circle fs-6 "></i><span class="ps-2">Job Opportunity
+                                                at Combined Fabrics.,</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-start">
+                                            <i class="fa-solid fa-circle fs-6 mt-2"></i><span class="ps-2">Internship
+                                                Opportunity at Lahore Police 9th Batch</span>
+                                        </li>
+                                        <li class="d-flex pt-3 align-items-start">
+                                            <i class="fa-solid fa-circle fs-6 mt-2"></i><span class="ps-2">Job
+                                                Opportunity at IMPERIAL HOTEL MANAGEMENT SERVICES</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer mt-5 container-fluid d-flex align-items-center ">
+        <div class="row align-items-center justify-content-between w-100 pt-4 pb-4">
+            <div class="footercontent col-12 col-md-10 ps-4">
+                <p class="m-0">© 2023 Minhaj University Lahore. All Rights Reserved.</p>
+            </div>
+            <div class="footeritem col-4 col-md-2 pt-2 pt-md-0 pe-3">
+                <ul
+                    class="list-unstyled d-flex gap-3 align-items-center justify-content-start justify-content-md-end m-0 ps-3">
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
